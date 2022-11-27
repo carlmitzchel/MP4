@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 
+/* Balangeg's Addition */
+
+ tr.border_bottom td {
+                border-bottom-width:1px;
+                border-bottom-style:solid;
+                border-bottom-color:#FFCC00;
+                height:100px;
+            }
+            
+ /* Padua's Addition */
+
 * {
   margin: 0;
   padding: 0;
