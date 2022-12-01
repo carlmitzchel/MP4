@@ -1,0 +1,51 @@
+th,
+td {
+  padding: 5px;
+}
+.fa-solid {
+  color: #eb5e28;
+}
+th .aligner {
+  display: flex;
+  align-items: center;
+}
+
+.css-button-fully-rounded--red {
+  min-width: 10px;
+  height: 20px;
+  color: #fff;
+  padding: 2px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #d90429;
+  background: #d90429;
+}
+.css-button-fully-rounded--red:hover {
+  background: #fff;
+  color: #d90429;
+}
+
+.css-button-fully-rounded--grey {
+  min-width: 20px;
+  height: 25px;
+  color: #fff;
+  padding: 2px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #495057;
+  background: #495057;
+}
+.css-button-fully-rounded--grey:hover {
+  background: #fff;
+  color: #495057;
+}

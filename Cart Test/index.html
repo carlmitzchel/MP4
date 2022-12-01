@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e0e52a8a9c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container my-3">
+		<div class="d-flex py-3">
+            <h3>Total Price: PHP {(total>0)?dcf.format(total):0} </h3> 
+            <!--MERONG 2 WAYS, CHECK OUT (BUONG LIST MABIBILI), AT YUNG BUY (CERTAIN PRODUCT LANG )
+            -->
+            <a class="mx-3 btn btn-primary" href="cart-check-out">Check Out</a>
+        </div>
+    <table class="table table-light">
+      <thead>
+        <tr>
+          <th scope="col">Preview</th>
+          <th scope="col">Name</th>
+          <th scope="col">Category</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--Pull the list then loop until list is exhausted-->
+        <tr>
+          <td><!--Java code to get Image-->IMG-1</td>
+          <td><!--Java code to get Name-->Rattan Chair</td>
+          <td><!--Java code to get Category-->Home Furniture</td>
+          <td><!--Java code to get Category-->PHP 230.99</td>
+
+          <td>
+            <form action="order-now" method="post" class="form-inline">
+              <input
+                type="hidden"
+                name="id"
+                value="<%= c.getId()%>"
+                class="form-input"
+              />
+              <!--ETO UNG INCREMENT AT DECREMENT NG ITEMS. SO PARANG ANG ITTRY NATIN DITO
+                MAY SARILING SERVLET AND INCREMENT AT DECREMENT, PERO ANG CODE DON E BABAWASN LANG TALAGA
+                YUNG QUANTITY THEN PASS SA CART.JSP ULIT-->
+                <a
+                  class="btn bnt-sm btn-incre"
+                  href="quantity-inc-dec?action=inc&id=<%=c.getId()%>"
+                  ><i class="fa-solid fa-square-plus"></i></i
+                ></a>
+                
+                <!--Yung VALUE rito kukunin nya yung quantity ng product, by default dapat 1 sya.-->
+                <input
+                  type="text"
+                  name="quantity"
+                  class="form-control"
+                  value="<%=c.getQuantity()%>"
+                  readonly
+                />
+                <a
+                  class="btn btn-sm btn-decre"
+                  href="quantity-inc-dec?action=dec&id=<%=c.getId()%>"
+                  ><i class="fa-solid fa-square-minus"></i></a>
+              
+              <button type="submit" class="css-button-fully-rounded--grey">Buy</button>
+            </form>
+          </td>
+          <td>
+            <!--Yung HREF nito, yung servlet na remove from cart. Ang gagawin lang nun e alisin ung ID na
+            ipapasa from this sa list. Kumbaga yung HREF may kasamang parameter.-->
+            <a
+              href="remove-from-cart?id=<%=c.getId() %>"
+              class="css-button-fully-rounded--red"
+              >Remove</a
+            >
+            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
