@@ -5,6 +5,10 @@
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 .wrapper {
   display: flex;
   position: relative;
@@ -140,6 +144,14 @@ body {
   height: 12rem;
   margin-top: 35px;
   border-radius: 15px;
+  text-decoration: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
 }
 
 .card h2 {
@@ -252,6 +264,20 @@ body {
       url("http://cdn.home-designing.com/wp-content/uploads/2014/12/hardwood-dining-room.png");
   background-size: cover;
 }
+.section-four {
+  padding-right: 50px;
+  padding-left: 150px;
+  height: 100vh;
+  background: 
+  /* top, transparent red, faked with gradient */ linear-gradient(
+      324deg,
+      rgba(204, 197, 185, 0.5) 0.1%,
+      rgba(64, 61, 57, 0.7) 100%
+    ),
+    /* bottom, image */
+      url("https://www.ceosuite.com/wp-content/uploads/2013/04/CEO_SSC_Room_Office_IMG_1611-1024x683.jpg");
+  background-size: cover;
+}
 
 @media only screen and (max-width: 1400px) {
   h1 {
@@ -268,11 +294,12 @@ body {
   }
   .section-three {
     padding-left: 25px;
+    height: 140vh;
   }
 
   .content {
     position: relative;
-    top: 35%;
+    top: 26%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
@@ -282,6 +309,10 @@ body {
     padding: 10px;
     white-space: normal;
     word-wrap: break-word;
+  }
+
+  .divide {
+    margin-top: 20px;
   }
 
   .content img {
@@ -297,6 +328,10 @@ body {
     word-wrap: break-word;
     color: #b5aa99;
     text-justify: auto;
+  }
+
+  .section-four {
+    padding: 10px 0px 0px 25px;
   }
 }
 
