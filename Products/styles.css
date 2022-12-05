@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;1,100&display=swap");
 
 /* Balangeg's Addition */
 
@@ -21,7 +22,13 @@ tr.border_bottom td {
 }
 
 body {
-  background: #403d39;
+  background: rgb(38, 35, 31);
+  background: linear-gradient(
+    142deg,
+    rgba(38, 35, 31, 1) 0%,
+    rgba(64, 61, 57, 1) 35%,
+    rgba(147, 144, 139, 1) 100%
+  );
   overflow-y: auto;
 }
 
@@ -36,22 +43,26 @@ body {
   background: #eb5e28;
   padding: 30px 0px;
   position: fixed;
+  z-index: 2;
 }
 
 .header {
+  width: 30px;
   text-align: center;
-  font-size: 70px;
+  font-size: 80px;
+  position: fixed;
+  top: 0%;
 }
 
 .sidebar {
-  position: absolute; /* Position them relative to the browser window */
-  left: -288px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 290px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
+  position: absolute;
+  left: -288px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 290px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
   border-radius: 0 20px 20px 0;
   z-index: 1;
 }
@@ -90,10 +101,6 @@ body {
 
 .wrapper .sidebar ul li:hover {
   background-color: #d5bdaf;
-}
-
-.wrapper .sidebar ul li:hover a {
-  color: #fff;
 }
 
 .wrapper .sidebar .social_media {
@@ -150,20 +157,26 @@ body {
 .section-one {
   padding-right: 50px;
   padding-left: 150px;
+  padding-top: 230px;
 }
 .header {
   background: #252422;
-  width: 100%;
-  border-radius: 15px;
+  width: 80%;
+  border-radius: 0px 0px 30px 30px;
   margin-bottom: 50px;
+  z-index: 1;
+  position: fixed;
+  left: 52.8%;
+  transform: translateX(-50%);
 }
 
 .header > h2 {
   text-align: center;
   vertical-align: middle;
   padding-top: 50px;
-  line-height: 80px;
+  line-height: 20px;
   color: #ccc5b9;
+  font-size: 1em;
 }
 .div-text1 {
   padding-top: 50px;
@@ -207,7 +220,7 @@ ul#menu a:hover {
 
 .featured {
   padding-top: 20px;
-  width: 75%;
+  width: 70%;
   height: 420px;
   background: rgba(37, 36, 34, 0.7);
   border-radius: 20px;
@@ -241,11 +254,11 @@ ul#menu a:hover {
 }
 
 .ftrcontainer-2 img {
-  height: 100%;
-  max-width: 100%;
+  height: 300px;
+  max-width: 900rem;
   display: block;
   margin: auto;
-  border-radius: 32% 68% 37% 63% / 32% 69% 31% 68%;
+  border-radius: 50px;
 }
 
 .featured-furniture:hover {
@@ -264,9 +277,6 @@ ul#menu a:hover {
 
   body {
     overflow-x: hidden;
-  }
-  .wrapper .sidebar {
-    width: 320px;
   }
 
   .siderbar {
@@ -362,7 +372,6 @@ ul#menu a:hover {
   height: 40px;
   color: #fff;
   padding: 5px 10px;
-  font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
@@ -372,7 +381,8 @@ ul#menu a:hover {
   border: none;
   background: #efefef;
   box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
-  color: #585858;
+  color: #403d39;
+  font-family: "Prompt", sans-serif;
 }
 .css-button-neumorphic:active {
   box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
@@ -394,19 +404,22 @@ span {
   font-size: 4em;
   color: #ccc5b9;
   font-weight: bold;
+  padding-left: 85px;
 }
 .section-two h1,
 h1 + p {
   margin: 2rem 1rem;
 }
 .wrapper-two {
-  max-width: 100rem;
+  width: 120rem;
   margin: 0 auto;
-  display: flex;
+  float: left;
   align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 3rem;
-  padding-left: 100px;
+  padding-left: 410px;
 }
 .box {
   width: 25rem;
@@ -415,6 +428,7 @@ h1 + p {
   transition: transform 0.3s linear 0s, filter 0.5s linear 0.3s,
     opacity 0.5s linear 0.3s;
   border-radius: 15px;
+  margin-bottom: 2em;
   /*transform-origin: top center;*/
 }
 .product {
@@ -429,44 +443,181 @@ h1 + p {
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.5s linear, height 0.1s linear 0s;
 }
+
 .product img {
   display: block;
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 25px;
 }
 .name {
   display: block;
   padding: 1rem 0.5rem;
+  color: black;
 }
 .description {
   position: absolute;
   bottom: 1rem;
   left: 0;
   right: 0;
+  bottom: 10px;
   display: block;
   padding: 0 1.5rem;
   opacity: 0;
   transition: opacity 0.1s linear 0s;
   font-family: "Josefin Sans", sans-serif;
+  font-size: 0.8em;
 }
-.wrapper-two:hover .box:not(:hover) {
-  filter: blur(3px);
-  opacity: 0.5;
-}
+
 .box:hover {
   transform: scale(1.1);
   transition: transform 0.3s linear 0.3s, filter 0.1s linear 0s,
     opacity 0.1s linear 0s;
 }
 .box:hover .product {
-  height: 23rem;
+  height: 22rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   transition: box-shadow 1s linear, height 0.3s linear 0.5s;
 }
 .box:hover .description {
-  opacity: 1;
+  width: 330px;
+  opacity: 1.5;
   transition: opacity 0.3s linear 0.75s;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Prompt", sans-serif;
+  color: black;
+  text-shadow: 3px 2px 9px rgba(255, 255, 255, 0.6);
+}
+
+hr.solid {
+  border-top: 0.5px solid #252422;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.section-three {
+  width: auto;
+  height: 100vh;
+}
+
+.section-four h1 {
+  font-size: 4em;
+  color: #ccc5b9;
   font-weight: bold;
+  padding-left: 85px;
+}
+
+.section-four h1,
+h1 + p {
+  margin-bottom: 50px;
+  font-weight: 300;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.section-six h1 {
+  font-size: 4em;
+  color: #ccc5b9;
+  font-weight: bold;
+  padding-left: 85px;
+}
+
+.section-six h1,
+h1 + p {
+  margin-bottom: 50px;
+  font-weight: 300;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header-three {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 400px) {
+  .wrapper .sidebar {
+    width: 320px;
+    z-index: 2;
+    position: fixed;
+    height: 667px;
+  }
+  .sidebar {
+    left: -290px;
+  }
+
+  ul#menu {
+    max-width: 6ch;
+    justify-content: center;
+  }
+
+  .directory {
+    text-align: center;
+    margin-top: -35px;
+  }
+
+  .directory ul {
+    display: inline-table;
+    line-height: 0.5em;
+  }
+
+  .section-one {
+    height: 135vh;
+  }
+
+  .card {
+    width: 250px;
+    height: 50px;
+    font-size: 0.5em;
+  }
+
+  .header-two h1 {
+    font-size: 3em;
+    margin-left: 45px;
+    margin-top: -10px;
+  }
+
+  .wrapper-two {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .product {
+    width: 300px;
+  }
+  .btn {
+    margin-right: 32px;
+  }
+  .box {
+    margin-bottom: 10px;
+  }
+
+  .header-two h1 {
+    margin-left: -0.8em;
+  }
+
+  .header {
+    width: 320px;
+  }
+
+  .header h2 {
+    font-size: 0.5em;
+  }
+
+  .header ul {
+    font-size: 0.8em;
+    line-height: 15px;
+    padding-bottom: 20px;
+  }
+
+  .wrapper-two {
+    padding-left: 0px;
+  }
+
+  .box:hover .description {
+    width: 300px;
+    opacity: 1.5;
+    transition: opacity 0.3s linear 0.75s;
+    font-family: "Prompt", sans-serif;
+    color: black;
+    text-shadow: 3px 2px 9px rgba(255, 255, 255, 0.6);
+  }
 }

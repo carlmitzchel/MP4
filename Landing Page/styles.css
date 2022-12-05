@@ -169,16 +169,6 @@ a:active {
   gap: 1rem;
 }
 
-.card:hover {
-  transform: scale(1.1);
-  -webkit-filter: brightness(120%);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 0.5s ease;
-}
-
 @media (min-width: 900px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
@@ -404,6 +394,11 @@ a:active {
 
   .sidebar {
     left: -290px;
+  }
+
+  .content p {
+    font-size: 1.1em;
+    margin-top: -10px;
   }
 }
 @media (min-width: 900px) {
