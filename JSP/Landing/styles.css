@@ -171,7 +171,7 @@ a:active {
 
 @media (min-width: 900px) {
   .cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -234,14 +234,9 @@ a:active {
   margin-top: -3.5em;
 }
 
-.section-two {
-  height: 30vh;
-  padding-top: 10px;
-  margin-left: 100px;
-}
 .section-three {
   height: 100vh;
-  width: auto;
+
   padding-top: 10px;
   margin-left: 100px;
   background: 
@@ -254,19 +249,140 @@ a:active {
       url("http://cdn.home-designing.com/wp-content/uploads/2014/12/hardwood-dining-room.png");
   background-size: cover;
 }
-.section-four {
-  padding-right: 50px;
-  padding-left: 150px;
+
+.content {
+  position: relative;
+  display: inline-block;
+  margin: 110px auto;
+}
+
+.divide {
+  padding-left: 70px;
+}
+.img-container {
+  width: 450px;
+  height: 500px;
+}
+
+.container {
+  margin-left: 425px;
+}
+.img-container img {
+  max-width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+  padding-bottom: 10px;
+}
+
+.content p {
+  position: absolute;
+  top: 20em;
+  right: 2;
+  width: 500px;
+  word-wrap: break-word;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+  font-size: 1.5em;
+  color: black;
+}
+
+.section-two {
   height: 100vh;
+  padding-top: 10px;
+  margin-left: 100px;
   background: 
   /* top, transparent red, faked with gradient */ linear-gradient(
       324deg,
-      rgba(204, 197, 185, 0.5) 0.1%,
-      rgba(64, 61, 57, 0.7) 100%
+      rgba(204, 197, 185, 0.5) 0%,
+      rgba(64, 61, 57, 0.5) 100%
     ),
     /* bottom, image */
-      url("https://www.ceosuite.com/wp-content/uploads/2013/04/CEO_SSC_Room_Office_IMG_1611-1024x683.jpg");
+      url("https://www.myjewishlearning.com/wp-content/uploads/2005/12/pareve-christmas-1598x900.jpg");
   background-size: cover;
+  color: #ccc5b9;
+}
+
+.featured {
+  margin-top: 70px;
+  width: 70%;
+  height: 420px;
+  background: rgba(37, 36, 34, 0.7);
+  border-radius: 20px;
+  padding: 20px;
+  top: 50%;
+  right: 50%;
+  margin-left: 282px;
+}
+.featured h2 {
+  font-size: 4em;
+  color: #ccc5b9;
+}
+
+.ftrcontainer-1 {
+  float: left;
+  width: 50%;
+  height: 300px;
+}
+
+.ftrcontainer-1 p {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: end;
+  font-size: 1.5em;
+  color: #ccc5b9;
+  text-shadow: 2px 2px 5px #101010;
+}
+.ftrcontainer-2 {
+  width: 50%;
+  height: auto;
+  float: right;
+}
+
+.ftrcontainer-2 img {
+  height: 400px;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.featured-furniture:hover {
+  -webkit-filter: brightness(40%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 0.5s ease;
+}
+
+.myButton {
+  box-shadow: 3px 5px 10px -2px #8a2a21;
+  background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+  background-color: #c62d1f;
+  border-radius: 42px;
+  border: 12px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 32px 76px;
+  margin-left: 730px;
+  margin-top: 140px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #810e05;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+  background-color: #f24437;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
 }
 
 @media only screen and (max-width: 1400px) {
