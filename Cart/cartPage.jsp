@@ -63,6 +63,12 @@
                         <%
                                 }
                             }%>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tbody>
                         <tr>
                             <td colspan="3"></td>
                             <td>Total Value :</td>
