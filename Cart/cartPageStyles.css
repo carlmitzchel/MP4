@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.title, .bar {
+    color: white;
+    font-size: 50px;
+}
+.bar{
+    color: #b5aa99;
+    font-weight: 100;
+}
+.cart{
+    color: #eb5e28;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: scroll;
+}
+.table{
+    width: 100%;
+}
+.table_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #252422; 
+}
+.table_header p{
+    color: #000000
+}
+.delete{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    color: whitesmoke;
+    background-color: #f80000;
+}
+.add_new{
+    padding: 10px 20px;
+    color: white;
+    background-color: #eb5e28;
+}
+input{
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid #eb5e28;
+    border-radius: 6px;
+    color: #eb5e28;
+}
+.table_section{
+    height: 650px;
+    overflow: auto;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+thead th{
+    position: relative;
+    top: 0;
+    background-color: #b5aa99;
+    color: white;
+    font-size: 15px;
+}
+th,td{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+.checkout{
+    padding: 10px 20px;
+    color: white;
+    background-color: #eb5e28;
+}
+td img{
+    height: 100px;
+    width: auto;
+}
+tr:hover td{
+    color: #eb5e28;
+}
+::placeholder{
+    color: #eb5e28;
+}
